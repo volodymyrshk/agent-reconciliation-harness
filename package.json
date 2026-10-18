@@ -1,0 +1,17 @@
+{
+  "name": "agent-reconciliation-harness",
+  "version": "0.1.0",
+  "description": "Rules first, a model only for the ambiguous cases, a policy gate before any write, and a durable outbox that never writes twice, with a golden dataset to compare configurations.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=23.6" },
+  "scripts": {
+    "test": "node --no-warnings --test test/*.test.ts",
+    "demo": "node --no-warnings scripts/demo.ts",
+    "eval": "node --no-warnings scripts/eval.ts"
+  },
+  "optionalDependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "zod": "^4.6.7"
+  }
+}

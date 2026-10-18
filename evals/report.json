@@ -1,0 +1,483 @@
+[
+  {
+    "config": "rules-only",
+    "cases": 300,
+    "autoRate": 0.5,
+    "autoPrecision": 1,
+    "falseAutoRate": 0,
+    "escalationPrecision": 0.6666666666666666,
+    "costUsd": 0,
+    "p50LatencyMs": 0,
+    "p95LatencyMs": 0,
+    "byScenario": {
+      "exact": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "rounding": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "memo-exact": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "memo-messy": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 25
+      },
+      "alias-variant": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 25
+      },
+      "duplicate": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "unapplied": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "partial": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "currency": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "ambiguous": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "overpayment": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "foreign-invoice-leak": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      }
+    },
+    "falseAutos": []
+  },
+  {
+    "config": "heuristic",
+    "cases": 300,
+    "autoRate": 0.6666666666666666,
+    "autoPrecision": 1,
+    "falseAutoRate": 0,
+    "escalationPrecision": 1,
+    "costUsd": 0,
+    "p50LatencyMs": 0,
+    "p95LatencyMs": 0,
+    "byScenario": {
+      "exact": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "rounding": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "memo-exact": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "memo-messy": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "alias-variant": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "duplicate": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "unapplied": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "partial": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "currency": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "ambiguous": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "overpayment": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "foreign-invoice-leak": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      }
+    },
+    "falseAutos": []
+  },
+  {
+    "config": "reckless",
+    "cases": 300,
+    "autoRate": 0.6866666666666666,
+    "autoPrecision": 0.8203883495145631,
+    "falseAutoRate": 0.12333333333333334,
+    "escalationPrecision": 0.7978723404255319,
+    "costUsd": 0,
+    "p50LatencyMs": 0,
+    "p95LatencyMs": 0,
+    "byScenario": {
+      "exact": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "rounding": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "memo-exact": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "memo-messy": {
+        "correct-auto": 13,
+        "false-auto": 12,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "alias-variant": {
+        "correct-auto": 6,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 19
+      },
+      "duplicate": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "unapplied": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "partial": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "currency": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "ambiguous": {
+        "correct-auto": 0,
+        "false-auto": 25,
+        "correct-review": 0,
+        "deferred": 0
+      },
+      "overpayment": {
+        "correct-auto": 0,
+        "false-auto": 0,
+        "correct-review": 25,
+        "deferred": 0
+      },
+      "foreign-invoice-leak": {
+        "correct-auto": 25,
+        "false-auto": 0,
+        "correct-review": 0,
+        "deferred": 0
+      }
+    },
+    "falseAutos": [
+      {
+        "id": "case-0009",
+        "scenario": "ambiguous",
+        "got": "apply INV-7442",
+        "want": "review"
+      },
+      {
+        "id": "case-0021",
+        "scenario": "ambiguous",
+        "got": "apply INV-6410",
+        "want": "review"
+      },
+      {
+        "id": "case-0027",
+        "scenario": "memo-messy",
+        "got": "apply INV-1598",
+        "want": "apply INV-1595"
+      },
+      {
+        "id": "case-0033",
+        "scenario": "ambiguous",
+        "got": "apply INV-2727",
+        "want": "review"
+      },
+      {
+        "id": "case-0039",
+        "scenario": "memo-messy",
+        "got": "apply INV-6911",
+        "want": "apply INV-6908"
+      },
+      {
+        "id": "case-0045",
+        "scenario": "ambiguous",
+        "got": "apply INV-7385",
+        "want": "review"
+      },
+      {
+        "id": "case-0051",
+        "scenario": "memo-messy",
+        "got": "apply INV-2481",
+        "want": "apply INV-2478"
+      },
+      {
+        "id": "case-0057",
+        "scenario": "ambiguous",
+        "got": "apply INV-5253",
+        "want": "review"
+      },
+      {
+        "id": "case-0069",
+        "scenario": "ambiguous",
+        "got": "apply INV-2418",
+        "want": "review"
+      },
+      {
+        "id": "case-0081",
+        "scenario": "ambiguous",
+        "got": "apply INV-3501",
+        "want": "review"
+      },
+      {
+        "id": "case-0087",
+        "scenario": "memo-messy",
+        "got": "apply INV-8846",
+        "want": "apply INV-8843"
+      },
+      {
+        "id": "case-0093",
+        "scenario": "ambiguous",
+        "got": "apply INV-3156",
+        "want": "review"
+      },
+      {
+        "id": "case-0099",
+        "scenario": "memo-messy",
+        "got": "apply INV-1113",
+        "want": "apply INV-1110"
+      },
+      {
+        "id": "case-0105",
+        "scenario": "ambiguous",
+        "got": "apply INV-4661",
+        "want": "review"
+      },
+      {
+        "id": "case-0111",
+        "scenario": "memo-messy",
+        "got": "apply INV-1906",
+        "want": "apply INV-1903"
+      },
+      {
+        "id": "case-0117",
+        "scenario": "ambiguous",
+        "got": "apply INV-6845",
+        "want": "review"
+      },
+      {
+        "id": "case-0123",
+        "scenario": "memo-messy",
+        "got": "apply INV-3400",
+        "want": "apply INV-3397"
+      },
+      {
+        "id": "case-0129",
+        "scenario": "ambiguous",
+        "got": "apply INV-8691",
+        "want": "review"
+      },
+      {
+        "id": "case-0141",
+        "scenario": "ambiguous",
+        "got": "apply INV-1365",
+        "want": "review"
+      },
+      {
+        "id": "case-0147",
+        "scenario": "memo-messy",
+        "got": "apply INV-8817",
+        "want": "apply INV-8814"
+      },
+      {
+        "id": "case-0153",
+        "scenario": "ambiguous",
+        "got": "apply INV-7007",
+        "want": "review"
+      },
+      {
+        "id": "case-0159",
+        "scenario": "memo-messy",
+        "got": "apply INV-7686",
+        "want": "apply INV-7683"
+      },
+      {
+        "id": "case-0165",
+        "scenario": "ambiguous",
+        "got": "apply INV-8286",
+        "want": "review"
+      },
+      {
+        "id": "case-0177",
+        "scenario": "ambiguous",
+        "got": "apply INV-7042",
+        "want": "review"
+      },
+      {
+        "id": "case-0189",
+        "scenario": "ambiguous",
+        "got": "apply INV-6195",
+        "want": "review"
+      },
+      {
+        "id": "case-0195",
+        "scenario": "memo-messy",
+        "got": "apply INV-8281",
+        "want": "apply INV-8278"
+      },
+      {
+        "id": "case-0201",
+        "scenario": "ambiguous",
+        "got": "apply INV-3487",
+        "want": "review"
+      },
+      {
+        "id": "case-0213",
+        "scenario": "ambiguous",
+        "got": "apply INV-1956",
+        "want": "review"
+      },
+      {
+        "id": "case-0225",
+        "scenario": "ambiguous",
+        "got": "apply INV-1328",
+        "want": "review"
+      },
+      {
+        "id": "case-0237",
+        "scenario": "ambiguous",
+        "got": "apply INV-1461",
+        "want": "review"
+      },
+      {
+        "id": "case-0249",
+        "scenario": "ambiguous",
+        "got": "apply INV-6196",
+        "want": "review"
+      },
+      {
+        "id": "case-0255",
+        "scenario": "memo-messy",
+        "got": "apply INV-4161",
+        "want": "apply INV-4158"
+      },
+      {
+        "id": "case-0261",
+        "scenario": "ambiguous",
+        "got": "apply INV-6764",
+        "want": "review"
+      },
+      {
+        "id": "case-0267",
+        "scenario": "memo-messy",
+        "got": "apply INV-3843",
+        "want": "apply INV-3840"
+      },
+      {
+        "id": "case-0273",
+        "scenario": "ambiguous",
+        "got": "apply INV-2171",
+        "want": "review"
+      },
+      {
+        "id": "case-0285",
+        "scenario": "ambiguous",
+        "got": "apply INV-3283",
+        "want": "review"
+      },
+      {
+        "id": "case-0297",
+        "scenario": "ambiguous",
+        "got": "apply INV-3348",
+        "want": "review"
+      }
+    ]
+  }
+]
