@@ -114,6 +114,6 @@ SEED=42 CASES=5000 npm test
 
 ## Scope
 
-A reference model, about 600 lines of source. In production the outbox is a Postgres table with the same unique key, the workers are a queue consumer, the ERP adapter is per vendor, and the review queue is a UI. Not covered: partial-payment allocation, FX conversion, multi-invoice payments, and real-time concurrency between several workers (the compare-and-set transitions are there, but the tests run one worker at a time). It does not promise exactly-once delivery to a third party; it promises that an uncertain outcome is resolved by looking before writing again, and surfaced when it can't be.
+A reference model, about 650 lines of source. In production the outbox is a Postgres table with the same unique key, the workers are a queue consumer, the ERP adapter is per vendor, and the review queue is a UI. Not covered: partial-payment allocation, FX conversion, multi-invoice payments, and real-time concurrency between several workers (the compare-and-set transitions are there, but the tests run one worker at a time). It does not promise exactly-once delivery to a third party; it promises that an uncertain outcome is resolved by looking before writing again, and surfaced when it can't be.
 
 MIT licensed. Volodymyr Shkarban.
