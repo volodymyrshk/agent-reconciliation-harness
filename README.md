@@ -1,5 +1,7 @@
 # agent-reconciliation-harness
 
+[![test](https://github.com/volodymyrshk/agent-reconciliation-harness/actions/workflows/test.yml/badge.svg)](https://github.com/volodymyrshk/agent-reconciliation-harness/actions/workflows/test.yml)
+
 How to let an agent act on a system of record without it writing the wrong thing, or the right thing twice. A small TypeScript reference (not a production library) built around one ugly, common workflow: matching incoming payments to open invoices across inconsistent sources.
 
 An agent that answers a question wrongly is annoying. An agent that posts the wrong ledger entry, or posts it twice because a request timed out after the write, is an incident. The model is the easy part here. The work is everything around it.
