@@ -4,6 +4,22 @@ How to let an agent act on a system of record without it writing the wrong thing
 
 An agent that answers a question wrongly is annoying. An agent that posts the wrong ledger entry, or posts it twice because a request timed out after the write, is an incident. The model is the easy part here. The work is everything around it.
 
+## Try it in two minutes
+
+Node 23.6+; the local demo, tests and evaluation need no dependencies or API key.
+
+```bash
+git clone https://github.com/volodymyrshk/agent-reconciliation-harness.git
+cd agent-reconciliation-harness
+npm test
+npm run demo
+npm run eval
+```
+
+The demo injects timeouts, a worker crash and revoked access. Look for the recovery trace and the duplicate-write count. The evaluation compares configurations on **synthetic data**, not customer transactions or a production model benchmark.
+
+**Code review route:** [workflow](src/workflow.ts) → [durable store](src/store.ts) → [policy gate](src/policy.ts) → [tests](test). The tradeoff is deliberate: unresolved outcomes and ambiguous matches go to review instead of an automatic write.
+
 ## The path every payment takes
 
 ```
